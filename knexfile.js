@@ -2,14 +2,14 @@
 module.exports = {
   development: {
     client: "mysql",
-    connection: "mysql://root:bijusrt123@localhost:3306/toda",
+    connection: "mysql://root:paranthaman@localhost:3306/todo",
     migrations: {
       directory: __dirname + "/migrations",
     },
   },
   production: {
     client: "mysql",
-    connection: "mysql://root:bijusrt123@localhost:3306/toda",
+    connection: "mysql://root:paranthaman@localhost:3306/todo",
   },
  };
  

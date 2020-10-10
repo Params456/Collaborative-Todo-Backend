@@ -7,6 +7,7 @@ module.exports = async(req,res)=>{
       var find = await knex('cities').where('city_name',req.body.city_name).select()
       console.log(find)
       if (!find.length){
+      console.log(body)
         await knex('cities').insert(body)
         const data = await knex('cities').where('city_name',req.body.city_name).select()
         res.json(data[0])
